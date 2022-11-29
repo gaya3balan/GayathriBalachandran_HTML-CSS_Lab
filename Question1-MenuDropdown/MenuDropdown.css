@@ -1,0 +1,83 @@
+h1 {
+    background-color: red;
+    height: 60px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+    padding-top: 20px;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.Menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0%;
+    padding: 0%;
+    padding-left: 50px;
+}
+
+.Menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.Menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+.Menu li:nth-child(2):hover #Dropdown1,
+.Menu li:nth-child(3):hover #Dropdown2 {
+    display: block;
+}
+
+#Dropdown1,
+#Dropdown2 {
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: whitesmoke;
+    padding: 0%;
+
+}
+
+.Menu li:hover {
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+#Dropdown1 li,
+#Dropdown2 li {
+    display: block;
+
+}
+
+#Dropdown1 li a,
+#Dropdown2 li a {
+    display: block;
+    color: blue;
+
+}
+
+#Dropdown1 li a:hover {
+    background-color: aqua;
+}
+
+#Dropdown2 li a:hover {
+    background-color: aqua;
+}
+
+
+#navigate {
+    position: sticky;
+    top: 0% z-index=1;
+}
